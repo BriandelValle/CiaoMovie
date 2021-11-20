@@ -10,7 +10,7 @@ export default class Request {
 
   async getInfo(inputValue) {
     try {
-      const url = `http://www.omdbapi.com/?s=${inputValue}&apikey=9177a8fa`;
+      const url = `https://www.omdbapi.com/?s=${inputValue}&apikey=9177a8fa`;
       const response = await fetch(url);
       const json = await response.json();
 
