@@ -30,7 +30,7 @@ export default class Request {
     const result = moviesName.map((item) => {
       return new Promise(async (resolve) => {
         try {
-          const url = `http://www.omdbapi.com/?t=${item}&apikey=9177a8fa`;
+          const url = `https://www.omdbapi.com/?t=${item}&apikey=9177a8fa`;
           const response = await fetch(url);
           const json = await response.json();
 
