@@ -40,6 +40,27 @@ export default class Request {
           moviesInfo[3].push(json.Type); 
           moviesInfo[4].push(json.Plot);
 
+/*  ver como reemplazar arrays con obj -- continua en display
+
+          moviesInfo.push(json.Poster);
+          moviesInfo.push(json.Title);
+          moviesInfo.push(json.Year); 
+          moviesInfo.push(json.Type); 
+          moviesInfo.push(json.Plot);
+
+*/
+/*          
+
+            moviesInfo= {
+            poster: json.Poster || null,
+            title: json.Title || null,
+            year: json.Year || null,
+            type: json.Type || null,
+            plot: json.Plot || null,
+          }; 
+
+*/
+
           console.log(moviesInfo);
 
           resolve();
