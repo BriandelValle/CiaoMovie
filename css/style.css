@@ -1,0 +1,29 @@
+body{
+    font-family: Calibri;
+    background-color:black;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+    input {
+      width: 500px;
+      padding: 8px;
+    }
+    .form{
+      text-align: center;
+    }
+    #destacada {
+        width: 120px;
+        height: 250px;
+      }
+    #dat{
+        padding-top: 10em;
+    
+    }
+
+    .modal-body{
+      background-color: rgba(12, 60, 150, 0.624);
+    }
+
+
+    
