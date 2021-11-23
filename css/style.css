@@ -22,8 +22,20 @@ body{
     }
 
     .modal-body{
-      background-color: rgba(12, 60, 150, 0.624);
+      background-color: rgba(136, 136, 136, 0.624);
     }
 
 
-    
+    #conexionNAV {
+      margin-left: 65rem;
+      background: rgb(109, 109, 109);
+      font-weight: 700;
+      padding: 0.5rem 1rem ;
+      border-radius: 6px;
+  }
+  .online {
+      color: rgb(0, 253, 0);
+  }
+  .offline {
+      color: rgb(94, 0, 0);
+  }

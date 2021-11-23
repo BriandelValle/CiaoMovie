@@ -2,6 +2,25 @@
 var numSiguiente = 1
 var totalPelis = 0
 
+
+window.addEventListener('offline', event => {
+    let conexionNAV = d.getElementById('conexion');
+    conexionNAV.className = ("offline");
+    conexionNAV.innerHTML = ('Offline');
+});
+
+window.addEventListener('online', event => {
+    let conexion = d.getElementById('conexion');
+    conexionNAV.className = ("online");
+    conexionNAV.innerHTML = ('Online');
+});
+
+if (!navigator.onLine) {
+    let conexionNAV = d.getElementById('conexion');
+    conexionNAV.className = ("offline");
+    conexionNAV.innerHTML = ('Offline');
+}
+
 function eventoBtn() {
     const searchText = document.getElementById('searchText');
 
@@ -118,3 +137,4 @@ function pag(pg) {
     //console.log(url)
     cargarDatos(url)
 }
+
