@@ -34,17 +34,18 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Favoritos</a>
             </li>
+            
           </ul>
+          
           <form class="d-flex">
             <input class="form-control me-sm-2" type="text" id="searchText" placeholder="Introduzca titulo">
             <button class="btn btn-secondary my-2 my-sm-0" type="button" value="Buscar" onclick="eventoBtn()"> Buscar </button>
-          </form>
+            </form>
         </div>
       </nav>
 
   <div class="cards-container">
     <h2 class="text-center text-light mb-4">Resultados de Busqueda</h2>
-    <h3><span id="conexionNAV" class="online"> Online </span></h3>
     <div class="container-fluid">
       <div class="row new-row mt-1 mb-1"></div>
       <div class="row default-row mt-1 mb-1" id="row-1"></div>
@@ -70,6 +71,11 @@
                 <a class="page-link" aria-disabled="true">Pagina 1</a>
             </li>
         </div>
+        <div class="enabled" style="display: flex; align-items: center; justify-content: center;" id="numPg">
+          <li class="previous">
+            <span id="conexionNAV" class="online"> Online </span>
+          </li>
+      </div>
     </div>
     <div class="modal fade " id="dat">
         <div class="modal-dialog ">

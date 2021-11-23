@@ -3,6 +3,9 @@ var numSiguiente = 1
 var totalPelis = 0
 
 
+
+
+// estado offline/online
 window.addEventListener('offline', event => {
     let conexionNAV = d.getElementById('conexion');
     conexionNAV.className = ("offline");
