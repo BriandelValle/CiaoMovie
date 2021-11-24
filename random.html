@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIAO MOVIES</title>
+    <title>CIAO MOVIES-RECOMENDACIONES</title>
     <link href="img/favicon.png" rel="icon">
     <link rel="manifest" href="./manifest.json"/>
     <link rel="stylesheet" href="css/style.css">
@@ -27,26 +27,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="random.html">Recomendaciones</a>
+              <a class="nav-link" href="#">Recomendaciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Favoritos</a>
             </li>
           </ul>
-          
-          <form class="d-flex">
-            <input class="form-control me-sm-2" type="text" id="searchText" placeholder="Introduzca titulo">
-            <button class="btn btn-secondary my-2 my-sm-0" type="button" value="Buscar" onclick="eventoBtn()"> Buscar </button>
-            </form>
         </div>
       </nav>
 
   <div class="cards-container">
     <p id="alert" class="alert"></p>
-    <h2 class="text-center text-light mb-4">Resultados de Busqueda</h2>
+    <h2 class="text-center text-light mb-4">Recomendados</h2>
     <div class="container-fluid">
       <div class="row new-row mt-1 mb-1"></div>
       <div class="row default-row mt-1 mb-1" id="row-1"></div>
@@ -57,25 +52,50 @@
 
   
     <div class="row row-cols-1 row-cols-md-3 " id="answer">
-    </div>
-</div>
-    <div class="container-fluid">
-        <!-- <br> -->
-        <nav aria-label="...">
-            <ul class="pager">
-                <li class="previous" id="back"><a onclick="pag(-1)">&larr; Anterior</a></li>
-                <li class="next" id=""><a onclick="pag(1)">Siguiente &rarr;</a></li>
-            </ul>
-        </nav>
-        <div class="enabled" style="display: flex; align-items: center; justify-content: center;" id="numPg">
-            <li class="previous">
-                <a class="page-link" aria-disabled="true">Pagina 1</a>
-            </li>
-        </div>
-        <div class="enabled" style="display: flex; align-items: center; justify-content: center;" id="numPg">
-
+      <div class=modal-dialog >
+        <div class=modal-content md>
+        <div class=modal-body><h1>
+        Alerta Roja</h1><br>
+        <img class=card-img-top src="img/img1.jpg"><br>
+        <h3> <a href="https://www.youtube.com/watch?v=UUZ_DITqers">Ver Trailer</a></h3>
       </div>
     </div>
+  </div>
+
+  <div class=modal-dialog >
+    <div class=modal-content md>
+    <div class=modal-body><h1>
+    Title</h1><br>
+    <img class=card-img-top src="img/img2.jpg"><br>
+    <h3> <a href="https://www.youtube.com/watch?v=7dWs0_yqm-0">Ver Trailer</a></h3>
+  </div>
+</div>
+</div>
+
+<div class=modal-dialog >
+  <div class=modal-content md>
+  <div class=modal-body><h1>
+  Title</h1><br>
+  <img class=card-img-top src="img/img3.jpg"><br>
+  <h3> <a href="https://www.youtube.com/watch?v=eW7Twd85m2g">Ver Trailer</a></h3>
+  
+</div>
+</div>
+</div>
+
+<div class=modal-dialog >
+  <div class=modal-content md>
+  <div class=modal-body><h1>
+  Title</h1><br>
+  <img class=card-img-top src="img/img4.jpg"><br>
+  <h3> <a href="https://www.youtube.com/watch?v=BsOmYpP4UDU">Ver Trailer</a></h3>
+</div>
+</div>
+</div>
+
+
+</div>
+
     <div class="modal fade " id="dat">
         <div class="modal-dialog ">
             <div class="modal-content md">

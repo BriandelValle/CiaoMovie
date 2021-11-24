@@ -6,22 +6,30 @@ var totalPelis = 0
 
 
 // estado offline/online
-window.addEventListener('offline', event => {
-    let conexionNAV = d.getElementById('conexion');
-    conexionNAV.className = ("offline");
-    conexionNAV.innerHTML = ('Offline');
-});
+const alert = document.getElementById('alert')
 
-window.addEventListener('online', event => {
-    let conexion = d.getElementById('conexion');
-    conexionNAV.className = ("online");
-    conexionNAV.innerHTML = ('Online');
-});
+addEventListener('online', (e) => {
+    setAlert(1)
+})
 
-if (!navigator.onLine) {
-    let conexionNAV = d.getElementById('conexion');
-    conexionNAV.className = ("offline");
-    conexionNAV.innerHTML = ('Offline');
+addEventListener('offline', (e) => {
+    setAlert(0)
+})
+
+const setAlert = (status) => {
+    alert.classList.remove('alert--online')
+    alert.classList.remove('alert--offline')
+
+    status === 0 ?
+        setTimeout(() => {
+            alert.textContent = 'Ups, parece que estas desconectado de la red'
+            alert.classList.add('alert--offline')
+        }, 100)
+        :
+        setTimeout(() => {
+            alert.textContent = 'Usted se encuentra en conectado a la red'
+            alert.classList.add('alert--online')
+        }, 100)
 }
 
 function eventoBtn() {
@@ -79,7 +87,7 @@ function buscaId(id) {
             <div class="modal-dialog">
             <div class="modal-content md">
                 <div class="modal-header">
-                    <h4 class=modal-title>Title:${peli.Title}</h4>
+                    <h4 class=modal-title>Titulo: ${peli.Title}</h4>
                 </div>
                 <div class="modal-body">
                 <p class=card-text>Año de Lanzamiento: ${peli.Year}</p>

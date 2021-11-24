@@ -25,9 +25,24 @@ body{
       background-color: rgba(136, 136, 136, 0.624);
     }
 
-  .online {
-      color: rgb(0, 253, 0);
-  }
-  .offline {
-      color: rgb(94, 0, 0);
-  }
+/* alert online offline */
+
+.alert{
+  position: fixed;
+  Width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.alert--online{
+  background-color: rgb(0, 255, 0, 0.6);
+  animation: reveal 4s ease;
+}
+
+.alert--offline{
+  background-color: rgb(255, 0, 0, 0.6);
+  animation: reveal 4s ease;
+}
