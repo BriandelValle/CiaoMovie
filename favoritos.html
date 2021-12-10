@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="MostrarFavs()">
   
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">CiaMovie</a>
@@ -26,14 +26,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Recomendaciones</a>
+            <li class="nav-item">
+              <a class="nav-link" href="random.html">Recomendaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="favlink" href="favoritos.html">Favoritos</a>
+              <a class="nav-link" id="favlink" href="#">Favoritos</a>
             </li>
           </ul>
         </div>
@@ -41,14 +41,14 @@
 
   <div class="cards-container">
     <p id="alert" class="alert"></p>
-    <h2 class="text-center text-light mb-4">Recomendados</h2>
+    <h2 class="text-center text-light mb-4">Favoritos</h2>
     <div class="container-fluid">
       <div class="row new-row mt-1 mb-1"></div>
       <div class="row default-row mt-1 mb-1" id="row-1"></div>
       <div class="row default-row mt-1 mb-1" id="row-2"></div>
     </div>
   </div>
-    <div class="container">
+<!--     <div class="container">
 
   
     <div class="row row-cols-1 row-cols-md-3 " id="answer">
@@ -61,52 +61,13 @@
       </div>
     </div>
   </div>
+</div>
+</div> -->
 
-  <div class=modal-dialog >
-    <div class=modal-content md>
-    <div class=modal-body><h1>
-    Title</h1><br>
-    <img class=card-img-top src="img/img2.jpg"><br>
-    <h3> <a href="https://www.youtube.com/watch?v=7dWs0_yqm-0">Ver Trailer</a></h3>
-  </div>
-</div>
-</div>
-
-<div class=modal-dialog >
-  <div class=modal-content md>
-  <div class=modal-body><h1>
-  Title</h1><br>
-  <img class=card-img-top src="img/img3.jpg"><br>
-  <h3> <a href="https://www.youtube.com/watch?v=eW7Twd85m2g">Ver Trailer</a></h3>
-  
-</div>
-</div>
-</div>
-
-<div class=modal-dialog >
-  <div class=modal-content md>
-  <div class=modal-body><h1>
-  Title</h1><br>
-  <img class=card-img-top src="img/img4.jpg"><br>
-  <h3> <a href="https://www.youtube.com/watch?v=BsOmYpP4UDU">Ver Trailer</a></h3>
-</div>
-</div>
-</div>
-
+<div id="fav">
 
 </div>
 
-    <div class="modal fade " id="dat">
-        <div class="modal-dialog ">
-            <div class="modal-content md">
-                <div class="modal-header">
-                </div>
-                <div class="modal-body">
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
